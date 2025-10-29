@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>method</key>
+  <string>ad-hoc</string>
+
+  <!-- ID de tu equipo en Apple Developer -->
+  <key>teamID</key>
+  <string>{teamID}</string>
+
+  <!-- Si quieres desactivar bitcode (recomendado en Flutter) -->
+  <key>compileBitcode</key>
+  <false/>
+
+  <!-- Firma manual -->
+  <key>signingStyle</key>
+  <string>manual</string>
+
+  <!-- Perfiles de aprovisionamiento -->
+  <key>provisioningProfiles</key>
+  <dict>
+    <!-- Bundle Identifier de tu app -->
+    <key>com.example.quiz_app</key>
+    <!-- Nombre EXACTO de tu perfil Ad-Hoc -->
+    <string>{PERFIL_IOS}</string>
+  </dict>
+
+  <!-- Incluir todos los dispositivos -->
+  <key>stripSwiftSymbols</key>
+  <true/>
+
+  <!-- Para re-firmar el IPA -->
+  <key>thinning</key>
+  <string>&lt;none&gt;</string>
+</dict>
+</plist>
