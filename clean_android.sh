@@ -13,10 +13,6 @@ flutter pub cache clean
 echo "👉 Restaurando dependencias de Flutter..."
 flutter pub get
 
-# Compilar el proyecto
-echo "👉 Compilando proyecto..."
-flutter pub run build_runner build --delete-conflicting-outputs
-
 # Entrar a carpeta Android
 cd android || exit
 
